@@ -189,7 +189,7 @@ func init() { // 插件主体
 	engine.OnKeywordGroup([]string{"好吗", "是吗", "行不行", "能不能", "可不可以"}, isAtriSleeping).SetBlock(true).
 		Handle(func(ctx *zero.Ctx) {
 			if rand.Intn(2) == 0 {
-				ctx.SendChain(randImage("YES.png", "NO.jpg"))
+				ctx.SendChain(dgtr.randImage("YES.png", "NO.jpg"))
 			}
 		})
 	engine.OnKeywordGroup([]string{"我好了"}, isAtriSleeping).SetBlock(true).
