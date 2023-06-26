@@ -106,7 +106,7 @@ func init() {
 		match := ctx.State["regex_matched"].([]string)[1]
 		cardType := ctx.State["regex_matched"].([]string)[2]
 		n := 1
-		reasons := [...]string{"您抽到的是~\n", "锵锵锵，塔罗牌的预言是~\n", "诶，让我看看您抽到了~\n"}
+		reasons := [...]string{"占卜？我并不喜欢呢~ 不过……\n", "有时间玩这些无趣的东西，不如来我实验室看看哦~ 小白鼠~\n", "塔罗牌……\n"}
 		position := [...]string{"『正位』", "『逆位』"}
 		reverse := [...]string{"", "Reverse/"}
 		start := 0
